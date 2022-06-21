@@ -1,0 +1,64 @@
+/*Name: Molli Bishop*/
+body{
+    background-color: rgb(6, 48, 97);
+    text-align: center;
+    color: cornsilk;
+    margin: 0;
+    padding: 0;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;    
+    -ms-user-select: none;     
+    -o-user-select: none;
+    user-select: none;
+    padding-bottom: 20px;
+}
+
+.card {
+    max-width: 250px;
+    max-height: 250px;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid gray;
+    margin: 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.board {
+    border: 2px solid black;
+    background-color: rgb(74, 52, 94);
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 95%;  
+    max-width: 1275px;
+    margin: auto;
+}
+
+.open {
+    transition: transform 250ms ease-out;
+    transform: rotateY(0deg);
+}
+
+.closed {
+    transform: rotateY(90deg);
+    transition: transform 250ms ease-in;
+}
+
+
+@media(max-width:600px) {
+    #body {
+        width: 100%;
+    }
+
+    .board {
+        width:95%;
+        position: relative;
+        margin: auto;
+    }
+
+    .card{
+        max-width: 222px;
+        max-height: 222px;
+    }
+}
